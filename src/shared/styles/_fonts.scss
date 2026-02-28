@@ -1,3 +1,7 @@
 @use 'mixins' as *;
 
-// @include font-face(Poppins, 400, 'Regular');
+@include font-face(SpotifyMixUI, 700, 'Bold', true);
+@include font-face(SpotifyMixUI, 400, 'Regular', true);
+@include font-face(SpotifyMixUI, 400, 'TitleVariable', true);
+@include font-face(YSText, 700, 'Bold');
+@include font-face(YSText, 400, 'Regular');
