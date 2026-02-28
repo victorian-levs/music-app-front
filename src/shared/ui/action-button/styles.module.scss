@@ -1,0 +1,46 @@
+.button {
+  --btn-size: 24px;
+  font-size: 0;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.15s, opacity 0.1s;
+  border-radius: calc(var(--btn-size) / 8);
+  padding: calc(var(--btn-size) / 8);
+  color: var(--color-white);
+  height: var(--btn-size);
+  width: var(--btn-size);
+
+  .icon {
+    opacity: 0.8;
+    color: var(--color-black);
+    transition: opacity 0.1s;
+  }
+
+  &:hover {
+    transform: scale(1.04);
+
+    .icon {
+      opacity: 1;
+    }
+  }
+  
+  &:active {
+    opacity: 0.8;
+    transform: scale(1);
+    
+    .icon {
+      opacity: 1;
+    }
+  }
+}
+
+.filled {
+  background-color: currentColor;
+}
+
+.disabled {
+  opacity: 0.6;
+}
