@@ -1,0 +1,17 @@
+@mixin to($to) {
+  @media (max-width: $to) {
+    @content;
+  }
+}
+
+@mixin font-face($font-family, $weight, $weightStr) {
+  @font-face {
+    font-family: $font-family;
+    font-style: 'normal';
+    font-weight: $weight;
+    font-display: swap;
+    src:
+      url('fonts/woff2/' + $font-family + '-' + $weightStr + '.woff2') format('woff2'),
+      url('fonts/woff/' + $font-family + '-' + $weightStr + '.woff') format('woff');
+  }
+}
