@@ -4,29 +4,15 @@
   */
   --color-background: oklch(94% 0 90);
   --color-text: oklch(23.161% 0.02 285);
-
   --color-white: oklch(100% 0 90);
   --color-black: oklch(0% 0 0);
-  --color-dark: oklch(0.22 0.01 0);
-  --color-stone: oklch(0.28 0.01 0);
-  --color-gray-light: oklch(73.8% 0 90);
   --color-popup-content: oklch(97.315% 0.00011 271.152);
 
   --color-red: oklch(65.4% 0.154 22.3);
-  --color-green: oklch(0.74 0.15 165.35);
-  --color-orange: oklch(0.65 0.19 36.32);
-  --color-orange-light: oklch(87.7% 0.112 78.4);
-  --color-indigo: oklch(51% 0.23 276.97);
+  --color-green: oklch(0.70 0.187 150.762);
 
-  --color-black-25: oklch(0 0 0 / 0.25);
-  --color-black-10: oklch(0 0 0 / 0.1);
-  --color-stone-85: oklch(0.28 0.01 0 / 0.85);
-  --color-white-70: oklch(1 0 90 / 0.7);
-  --color-orange-85: oklch(0.65 0.19 36.32 / 0.85);
-  --color-orange-12: oklch(0.65 0.19 36.32 / 0.12);
-  --color-orange-7: oklch(0.65 0.19 36.32 / 0.07);
-  --color-green-12: oklch(0.74 0.15 165.35 / 0.12);
-  --color-green-7: oklch(0.74 0.15 165.35 / 0.07);
+  --color-white-85: oklch(0.28 0.01 0 / 0.85);
+  --color-green-85: oklch(0.70 0.187 150.762 / 0.85);
 
   --border-radius-sm: .25rem;
   --border-radius-md: .5rem;
@@ -38,8 +24,7 @@
   --z-under: -1;
   --z-over: 1;
   --z-second-over: 2;
-  --z-tooltip: 5;
-
+  
   /*
   === Transitions ===
   */
@@ -54,16 +39,6 @@
 
   --color-white: oklch(15% 0 90);
   --color-black: oklch(100% 0 0);
-  --color-dark: oklch(0.22 0.01 0);
-  --color-stone: oklch(0.28 0.01 0);
-  --color-gray-light: oklch(73.8% 0 90);
 
   --color-red: oklch(44.6% 0.154 22.3);
-  --color-orange: oklch(69.5% 0.152 64.4);
-  --color-orange-light: oklch(78% 0.112 78.4);
-  --color-indigo: oklch(60% 0.23 276.97);
-
-  --color-black-10: oklch(95% 0 0 / 0.1);
-  --color-black-25: oklch(95% 0 0 / 0.25);
-  --color-white-70: oklch(5% 0 90 / 0.7);
 }

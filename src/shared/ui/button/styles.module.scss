@@ -1,0 +1,108 @@
+@use "sass:map";
+
+.button {
+  line-height: 1;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  will-change: transform;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  display: inline-block;
+  padding: .675rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  transition: opacity 0.25s, transform cubic-bezier(.3,0,0,1) 60ms;
+  border-radius: var(--border-radius-max);
+
+  &:hover {
+    transform: scale(1.04);
+  }
+
+  &:active {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 50%;
+  aspect-ratio: 1;
+}
+
+$sizes: (
+  sm: (
+    padding: .425rem .75rem,
+    font-size: .75rem,
+  ),
+  md: (
+    padding: .675rem 1rem,
+    font-size: .875rem,
+  ),
+  lg: (
+    padding: .875rem 1.125rem,
+    font-size: 1.125rem,
+  ),
+);
+
+@mixin init-button-sizes($size) {
+  .filled-white-#{$size}, .filled-green-#{$size}, .outlined-#{$size} {
+    $config: map.get($sizes, $size);
+    padding: map.get($config, padding);
+    font-size: map.get($config, font-size);
+  }
+}
+
+@mixin init-filled-colors($c, $textColor: 'black') {
+  .filled-#{$c}-sm, .filled-#{$c}-md, .filled-#{$c}-lg {
+    color: var(--color-#{$textColor});
+    background-color: var(--color-#{$c});
+  }
+}
+
+@mixin init-outlined-colors() {
+  .outlined-sm, .outlined-md, .outlined-lg {
+    color: var(--color-black);
+    background-color: transparent;
+    border: 0.0625rem solid var(--color-black);
+  }
+}
+
+@include init-button-sizes('sm');
+@include init-button-sizes('md');
+@include init-button-sizes('lg');
+
+@include init-filled-colors('white');
+@include init-filled-colors('green');
+@include init-outlined-colors();
+
+
+.text {
+  all: unset;
+  display: inline;
+  transition: filter var(--trans-fast);
+  font-size: 0.75rem;
+  font-weight: 400;
+  cursor: pointer;
+
+  &:hover {
+    filter: drop-shadow(0 0 1.5rem var(--color-indigo));
+  }
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.unstyled {
+  all: unset;
+  display: inline-block;
+  cursor: pointer;
+}
+
