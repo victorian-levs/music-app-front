@@ -1,14 +1,14 @@
 {
   "name": "music-app-front",
-  "private": true,
-  "version": "0.0.0",
   "type": "module",
-  "license": "MIT",
+  "version": "0.0.0",
+  "private": true,
   "author": {
     "name": "Victor Maznichenko",
     "email": "victor_maznichenko@mail.ru",
     "url": "https://github.com/victor_maznichenko"
   },
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -31,19 +31,22 @@
     "react-dom": "^19.2.0"
   },
   "devDependencies": {
-    "@siberiacancode/eslint": "^2.15.2",
+    "@siberiacancode/eslint": "2.14.0",
+    "@storybook/react-vite": "^10.2.10",
     "@types/node": "^24.10.1",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.1.1",
+    "eslint-plugin-storybook": "^10.2.10",
+    "globals": "^16.5.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
-    "globals": "^16.5.0",
     "sass-embedded": "^1.97.3",
-    "typescript": "~5.9.3",
-    "vite": "^7.3.1",
     "storybook": "^10.2.10",
-    "@storybook/react-vite": "^10.2.10",
-    "eslint-plugin-storybook": "^10.2.10"
+    "typescript": "~5.9.3",
+    "vite": "^7.3.1"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": "bun run lint"
   }
 }

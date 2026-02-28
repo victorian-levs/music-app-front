@@ -6,7 +6,7 @@ import { appStarted } from '@/shared/config/init';
 /* Обьявляем константу с роутами которые будем использовать во всем приложении */
 export const routes = {
   home: createRoute(),
-  notFound: createRoute(),
+  notFound: createRoute()
 };
 
 /* Создаем элементы управления, историю роутера */
@@ -15,16 +15,16 @@ export const router = createHistoryRouter({
   routes: [
     {
       path: '/',
-      route: routes.home,
-    },
+      route: routes.home
+    }
   ],
   notFoundRoute: routes.notFound,
-  controls,
+  controls
 });
 
 /* Создаем объект history при инициализации приложения */
 sample({
   clock: appStarted,
   fn: () => createBrowserHistory(),
-  target: router.setHistory,
+  target: router.setHistory
 });
