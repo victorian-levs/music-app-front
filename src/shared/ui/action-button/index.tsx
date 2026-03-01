@@ -25,7 +25,7 @@ export const ActionButton = ({
   return (
     <button
       className={clsx(className, styles.button, styles[variant], disabled && styles.disabled)}
-      style={{ ['--btn-size' as string]: `${size}px`, ...style }}
+      style={{ '--btn-size': `${size}px`, ...style } as React.CSSProperties}
       aria-label={props['aria-label'] ?? name}
       disabled={disabled}
       type='button'
