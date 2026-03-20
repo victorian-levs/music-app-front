@@ -4,6 +4,7 @@
   */
   --color-background: oklch(94% 0 90);
   --color-text: oklch(23.161% 0.02 285);
+  --color-gray-light: oklch(73.8% 0 90);
   --color-white: oklch(100% 0 90);
   --color-black: oklch(0% 0 0);
   --color-popup-content: oklch(97.315% 0.00011 271.152);
@@ -45,6 +46,7 @@
 [data-theme="dark"] {
   --color-background: oklch(20% 0 90);
   --color-text: oklch(76.839% 0.02 285);
+  --color-gray-light: oklch(0.5 0 0);
 
   --color-white: oklch(15% 0 90);
   --color-black: oklch(100% 0 0);

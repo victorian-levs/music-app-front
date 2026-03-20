@@ -1,0 +1,63 @@
+@use "@/shared/styles/variables" as *;
+
+.wrapper {
+    font-size: var(--fs-text_M);
+    width: 100%;
+}
+
+.blocked {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.field {
+    display: flex;
+    height: 2.25rem;
+    align-items: center;
+    column-gap: .375rem;
+    position: relative;
+    border-radius: var(--border-radius-sm);
+    border: 0.0625rem solid var(--color-gray-light);
+    padding: 0.25rem 0.5rem;
+}
+
+.invalid .field {
+    border-color: var(--color-red);
+}
+
+.errorTooltip {
+    color: var(--color-red);
+}
+
+.rounded .field {
+    border-radius: var(--border-radius-max);
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px var(--color-gray-light) inset;
+}
+
+.input {
+    flex: 1 0 auto;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+    border: none;
+    color: inherit;
+
+    &::placeholder {
+        font-family: Poppins, sans-serif;
+        color: var(--color-placeholder);
+    }
+}
+
+.clearButton {
+    color: var(--color-gray-light);
+}
+
+.clearButton, .errorTooltip {
+    line-height: 0;
+}

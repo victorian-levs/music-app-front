@@ -29,7 +29,8 @@
     "install": "^0.13.0",
     "motion": "^12.34.3",
     "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "react-dom": "^19.2.0",
+    "react-number-format": "^5.4.4"
   },
   "devDependencies": {
     "@siberiacancode/eslint": "2.14.0",
