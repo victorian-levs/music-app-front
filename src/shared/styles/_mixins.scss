@@ -10,7 +10,7 @@
     font-style: normal;
     font-weight: $weight;
     font-display: swap;
-    src: url('fonts/#{$font-family}-#{$weightStr}.woff2') format('woff2');
+    src: url('/fonts/#{$font-family}-#{$weightStr}.woff2') format('woff2');
     @if $english {
       unicode-range: U+0000-007F;
     } @else {

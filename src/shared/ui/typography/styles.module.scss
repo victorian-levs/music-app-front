@@ -1,0 +1,55 @@
+@use '@/shared/styles/variables' as *;
+
+.heading_1,
+.heading_2,
+.heading_3,
+.heading_4 {
+  font-weight: 700;
+}
+
+.text_L,
+.text_M,
+.text_S,
+.link {
+  font-weight: 400;
+}
+
+.label_S, .label_M {
+   font-weight: 600;
+}
+
+@mixin init-heading($size) {
+  .heading_#{$size} {
+    font-size: var(--fs-heading_#{$size});
+    line-height: 105%;
+  }
+}
+
+@include init-heading(1);
+@include init-heading(2);
+@include init-heading(3);
+@include init-heading(4);
+
+.text_L {
+  font-size: var(--fs-text_L);
+}
+
+.text_M, .label_M {
+  font-size: var(--fs-text_M);
+  line-height: 120%;
+}
+
+.text_S, .label_S {
+  font-size: var(--fs-text_S);
+  line-height: 150%;
+}
+
+.link {
+  font-size: var(--fs-text_S);
+  color: var(--color-text);
+  transition: color 0.1s;
+
+  &:hover {
+    color: var(--color-green);
+  }
+}
