@@ -115,7 +115,7 @@ export const InputText = ({
           {label}
         </Typography>
       )}
-      <div className={styles.field}>
+      <span className={styles.field}>
         {before && <div className={beforeClassName}>{before}</div>}
 
         <Condition
@@ -158,7 +158,7 @@ export const InputText = ({
             <Typography as={Tooltip.Content} variant='text_S'>{errorMessage}</Typography>
           </Tooltip>
         )}
-      </div>
+      </span>
     </Typography>
   );
 };

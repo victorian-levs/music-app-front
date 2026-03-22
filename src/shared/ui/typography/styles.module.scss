@@ -15,7 +15,8 @@
 }
 
 .label_S, .label_M {
-   font-weight: 600;
+  font-weight: 600;
+  color: var(--color-black);
 }
 
 @mixin init-heading($size) {
